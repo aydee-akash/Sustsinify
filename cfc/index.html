@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Carbon Footprint Calculator</h1>
+        <label for="electricity">Electricity Usage (kWh/month):</label>
+        <input type="number" id="electricity" placeholder="Enter kWh" min="0">
+        
+        <label for="gas">Gas Usage (therms/month):</label>
+        <input type="number" id="gas" placeholder="Enter therms" min="0">
+        
+        <label for="miles">Miles Driven per Month:</label>
+        <input type="number" id="miles" placeholder="Enter miles" min="0">
+        
+        <button onclick="calculate()">Calculate</button>
+        
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
